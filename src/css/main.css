@@ -1,0 +1,60 @@
+@import url(./vars.css);
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    outline: none;
+}
+
+.preview__title {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.preview__subtitle {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+
+/* MODAL */
+
+/* PREVIEW */
+
+/* BIG BUTTONS */
+
+/* FOOTER */
