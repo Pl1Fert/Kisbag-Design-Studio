@@ -1,0 +1,77 @@
+.slideshow {
+    &__wrapper {
+        position: relative;
+    }
+
+    &__item {
+        display: none;
+        animation-name: fade;
+        animation-duration: 1.5s;
+
+        img {
+            height: 570px;
+            width: 100%;
+        }
+
+        &_active {
+            display: block;
+        }
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.slideshow__button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: $black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s linear;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+    &:hover {
+        background-color: $grey;
+    }
+}
+
+.slideshow__next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slideshow__dots {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.slideshow__dot{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: $grey;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.3s linear;
+
+    &:hover {
+        background-color: $black;
+    }
+
+    &_active {
+        background-color: $black;
+    }
+}
