@@ -1,0 +1,39 @@
+.posts {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 140px;
+
+        .post {
+            margin-bottom: 100px;
+
+            &__link {
+                img {
+                    width: 550px;
+                    height: 360px;
+                    transition: all 0.3s linear;
+
+                    &:hover {
+                        transform: scale(.9);
+                    }
+                }
+            }
+
+            &__info {
+                padding-left: 15px;
+            }
+
+            &__title {
+                font-size: 26px;
+                margin: 8px 0;
+            }
+
+            &__subtitle {
+                color: $grey;
+                font-weight: 300;
+                font-size: 16px;
+            }
+        }
+    }
+}

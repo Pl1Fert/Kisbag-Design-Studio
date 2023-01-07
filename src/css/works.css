@@ -1,0 +1,52 @@
+.projects {
+    margin-bottom: 140px;
+    
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+
+        .project {
+            margin-bottom: 100px;
+
+            &__content {
+                margin-bottom: 10px;
+            }
+
+            &__link {
+                img {
+                    width: 575px;
+                    height: 310px;
+                    transition: all 0.3s linear;
+
+                    &:hover {
+                        transform: scale(.9);
+                    }
+                }
+            }
+
+            &__info {
+                padding-left: 15px;
+            }  
+
+            &__title {
+                font-size: 26px;
+                margin-bottom: 5px;
+            }
+
+            &__subtitle {
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                margin-bottom: 12px;
+            }
+
+            &__place {
+                font-size: 14px;
+                font-weight: 300;
+                color: $grey;
+            }
+        }
+    }
+}

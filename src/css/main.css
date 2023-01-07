@@ -1,4 +1,7 @@
 @import url(./vars.css);
+@import url(./works.css);
+@import url(./logos.css);
+@import url(./blog.css);
 
 *,
 *::after,
@@ -67,6 +70,21 @@ button {
     cursor: default !important;
     opacity: .5;
     pointer-events: none !important;
+}
+
+.works-button {
+    align-self: center;
+    border: 1px solid $black;
+    color: $black;
+    padding: 13px 18px;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0 auto;
+
+    &:hover {
+        color: #fff;
+        background-color: $black;
+    }
 }
 
 
@@ -177,15 +195,15 @@ button {
 
 /* HOME PROJECTS */
 
-.projects {
+.projects-preview {
     margin-bottom: 150px;
 
-    .projects__inner {
+    &__inner {
         display: flex;
         flex-direction: column;
         gap: 120px;
 
-        .project {
+        .project-preview {
             position: relative;
 
             &__name {
@@ -209,37 +227,23 @@ button {
                     }
                 }
             }
-        }
 
-        .project:first-child {
-            align-self: flex-end;
-
-            .project__name {
-                right: 0;
-                margin-right: 10px;
+            &:first-child{
+                align-self: flex-end;
+    
+                .project-preview__name {
+                    right: 0;
+                    margin-right: 10px;
+                }
             }
-        }
 
-        .project:nth-child(2) {
-            align-self: flex-start;
-
-            .project__name {
-                left: 0;
-                margin-left: 10px;
-            }
-        }
-
-        .works-button {
-            align-self: center;
-            border: 1px solid $black;
-            color: $black;
-            padding: 13px 18px;
-            font-weight: 400;
-            font-size: 15px;
-
-            &:hover {
-                color: #fff;
-                background-color: $black;
+            &:nth-child(2) {
+                align-self: flex-start;
+    
+                .project-preview__name {
+                    left: 0;
+                    margin-left: 10px;
+                }
             }
         }
     }
@@ -285,7 +289,6 @@ button {
 
         .mail {
             padding-left: 30px;
-            flex: 1 1 33.333%;
 
             &__title {
                 font-weight: 400;
@@ -307,11 +310,7 @@ button {
             gap: 20px;
         }
 
-        .social-links {
-            flex: 1 1 33.333%;
-        }
-
-        .footer-navbar {
+        .social-links, .footer-navbar, .mail {
             flex: 1 1 33.333%;
         }
     }
