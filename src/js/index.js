@@ -1,6 +1,7 @@
 let [fileName] = location.pathname.split("/").slice(-1);
 let footerNavbarLinks = document.querySelectorAll(".footer-navbar__link");
 let modalLinks = document.querySelectorAll(".modal__link");
+let body = document.querySelector('body');
 
 footerNavbarLinks.forEach((link) => {
     if (link.getAttribute("href") === fileName) {
@@ -20,8 +21,12 @@ let modal = document.querySelector(".modal");
 
 openModalButton.addEventListener("click", () => {
     modal.classList.add("modal_open");
+    body.classList.add("modal_open");
 });
 
 closeModalButton.addEventListener("click", () => {
     modal.classList.remove("modal_open");
+    setTimeout(() => {
+        body.classList.remove("modal_open");
+    }, 300);
 });

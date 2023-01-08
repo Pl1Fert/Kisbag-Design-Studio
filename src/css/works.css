@@ -50,3 +50,39 @@
         }
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .projects__inner .project img{
+        width: 500px;
+    }  
+}
+
+@media screen and (max-width: 1140px) {
+    .projects__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .projects__inner .project img{
+        width: 600px;
+    }  
+
+    .projects__inner .project .project__info{
+        padding-left: 0;
+    }  
+
+    .projects__inner .project{
+        text-align: center;
+    }  
+}
+
+@media screen and (max-width: 620px) {
+    .projects__inner .project img{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }  
+
+    .projects__inner .project {
+        margin-bottom: 60px;
+    }  
+}

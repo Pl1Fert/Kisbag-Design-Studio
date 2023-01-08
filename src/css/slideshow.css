@@ -19,6 +19,37 @@
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .slideshow__inner .slideshow__item img {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .slideshow__inner {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .slideshow__inner .slideshow__item img {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .slideshow__inner .slideshow__item img {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .slideshow__inner .slideshow__item img {
+        height: 300px;
+    }
+}
+
 @keyframes fade {
     from {
         opacity: 0.4;
