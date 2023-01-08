@@ -1,0 +1,67 @@
+.project-description {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 120px;
+    }
+
+    &__item {
+        flex: 1 1 50%;
+
+        &__title {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+    
+        &__text {
+            color: $grey;
+            letter-spacing: 1px;
+            font-size: 18px;
+            line-height: 30px;
+            padding-left: 20px;
+            font-weight: 300;
+        }
+    }
+
+    &__image {
+        img {
+            width: 385px;
+            height: 270px;
+        }
+    }
+}
+
+.gallery {
+    margin-bottom: 140px;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__items {
+        display: flex;
+        gap: 25px;
+    }
+
+    &__image_small {
+        width: 585px;
+        height: 420px;
+    }
+
+    &__image_big {
+        width: 1200px;
+        height: 570px;
+    }
+
+    .works-button {
+        margin-top: 100px;
+    }
+}
+
