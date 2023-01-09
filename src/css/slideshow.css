@@ -25,13 +25,6 @@
     }
 }
 
-@media screen and (max-width: 900px) {
-    .slideshow__inner {
-        width: 90%;
-        margin: 0 auto;
-    }
-}
-
 @media screen and (max-width: 760px) {
     .slideshow__inner .slideshow__item img {
         height: 400px;
@@ -88,7 +81,7 @@
     width: fit-content;
 }
 
-.slideshow__dot{
+.slideshow__dot {
     cursor: pointer;
     height: 12px;
     width: 12px;

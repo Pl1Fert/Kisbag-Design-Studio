@@ -74,12 +74,6 @@ button {
     }
 }
 
-@media screen and (max-width: 900px) {
-    .container {
-        width: 100%;
-    }
-}
-
 .list {
     display: flex;
     flex-direction: column;
@@ -109,6 +103,45 @@ button {
     &:hover {
         color: #fff;
         background-color: $black;
+    }
+}
+
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+.active.fade-bottom {
+    animation: fade-bottom 1s linear;
+}
+
+.active.fade-top {
+    animation: fade-top 1s linear;
+}
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
@@ -292,7 +325,8 @@ button {
         height: 100%;
     }
 
-    .projects-preview__inner .project-preview:first-child, .projects-preview__inner .project-preview:nth-child(2){
+    .projects-preview__inner .project-preview:first-child,
+    .projects-preview__inner .project-preview:nth-child(2) {
         align-self: center;
     }
 }
@@ -316,7 +350,8 @@ button {
 }
 
 @media screen and (max-width: 500px) {
-    .projects-preview__inner .project-preview:first-child, .projects-preview__inner .project-preview:nth-child(2) {
+    .projects-preview__inner .project-preview:first-child,
+    .projects-preview__inner .project-preview:nth-child(2) {
         .project-preview__name {
             top: -15%;
         }
